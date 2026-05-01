@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS owners;
 
 CREATE TABLE IF NOT EXISTS units (
     id        INTEGER PRIMARY KEY,
-    number    TEXT NOT NULL UNIQUE, -- número de apartamento único
+    number    TEXT NOT NULL UNIQUE, 
     floor     INTEGER NOT NULL CHECK (floor > 0),
     area      REAL CHECK (area > 0),
     is_active INTEGER NOT NULL DEFAULT 1
