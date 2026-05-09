@@ -1,4 +1,3 @@
-
 DROP TABLE IF EXISTS maintenance;
 DROP TABLE IF EXISTS fees;
 DROP TABLE IF EXISTS units;
@@ -8,7 +7,8 @@ DROP TABLE IF EXISTS owners;
 
 CREATE TABLE owners (
     owner_id INTEGER PRIMARY KEY,
-    full_name TEXT NOT NULL,
+    first_name TEXT NOT NULL,
+    last_name TEXT NOT NULL,
     phone TEXT,
     email TEXT
 );
@@ -43,23 +43,23 @@ CREATE TABLE maintenance (
 
 
 
-INSERT INTO owners (owner_id, full_name, phone, email)
+INSERT INTO owners (owner_id, first_name, last_name, phone, email)
 VALUES
-(1, 'Carlos Ramirez', '3001111111', 'carlos@email.com'),
-(2, 'Laura Gomez', '3002222222', 'laura@email.com'),
-(3, 'Miguel Torres', '3003333333', 'miguel@email.com'),
-(4, 'Andrea Ruiz', '3004444444', 'andrea@email.com'),
-(5, 'Sofia Perez', '3005555555', 'sofia@email.com'),
-(6, 'Daniel Castro', '3006666666', 'daniel@email.com'),
-(7, 'Camila Herrera', '3007777777', 'camila@email.com'),
-(8, 'Julian Martinez', '3008888888', 'julian@email.com'),
-(9, 'Paula Rojas', '3009999999', 'paula@email.com'),
-(10, 'Nicolas Diaz', '3011111111', 'nicolas@email.com'),
-(11, 'Valentina Mora', '3012222222', 'valentina@email.com'),
-(12, 'Samuel Vargas', '3013333333', 'samuel@email.com'),
-(13, 'Fernanda Leon', '3014444444', 'fernanda@email.com'),
-(14, 'Juan Silva', '3015555555', 'juan@email.com'),
-(15, 'Isabella Medina', '3016666666', 'isabella@email.com');
+(1, 'Carlos', 'Ramirez', '3001111111', 'carlos@email.com'),
+(2, 'Laura', 'Gomez', '3002222222', 'laura@email.com'),
+(3, 'Miguel', 'Torres', '3003333333', 'miguel@email.com'),
+(4, 'Andrea', 'Ruiz', '3004444444', 'andrea@email.com'),
+(5, 'Sofia', 'Perez', '3005555555', 'sofia@email.com'),
+(6, 'Daniel', 'Castro', '3006666666', 'daniel@email.com'),
+(7, 'Camila', 'Herrera', '3007777777', 'camila@email.com'),
+(8, 'Julian', 'Martinez', '3008888888', 'julian@email.com'),
+(9, 'Paula', 'Rojas', '3009999999', 'paula@email.com'),
+(10, 'Nicolas', 'Diaz', '3011111111', 'nicolas@email.com'),
+(11, 'Valentina', 'Mora', '3012222222', 'valentina@email.com'),
+(12, 'Samuel', 'Vargas', '3013333333', 'samuel@email.com'),
+(13, 'Fernanda', 'Leon', '3014444444', 'fernanda@email.com'),
+(14, 'Juan', 'Silva', '3015555555', 'juan@email.com'),
+(15, 'Isabella', 'Medina', '3016666666', 'isabella@email.com');
 
 
 
@@ -100,13 +100,6 @@ VALUES
 (3, 5, 'Painting walls', '2026-05-03', 200000),
 (4, 10, 'Door replacement', '2026-05-04', 450000),
 (5, 15, 'Air conditioning repair', '2026-05-05', 600000);
-
-
-
-
-UPDATE owners
-SET phone = '3020000000'
-WHERE owner_id = 1;
 
 -- ACTUALIZAR MÚLTIPLES COLUMNAS
 
