@@ -62,21 +62,21 @@ REFERENCES units(unit_id)
 
 INSERT INTO owners (owner_id, first_name, last_name, phone, email)
 VALUES
-(1, 'Carlos', 'Ramirez', '3001111111', '[carlos@email.com](mailto:carlos@email.com)'),
-(2, 'Laura', 'Gomez', NULL, '[laura@email.com](mailto:laura@email.com)'),
-(3, 'Miguel', 'Torres', '3003333333', '[miguel@email.com](mailto:miguel@email.com)'),
-(4, 'Andrea', 'Ruiz', NULL, '[andrea@email.com](mailto:andrea@email.com)'),
-(5, 'Sofia', 'Perez', '3005555555', '[sofia@email.com](mailto:sofia@email.com)'),
-(6, 'Daniel', 'Castro', NULL, '[daniel@email.com](mailto:daniel@email.com)'),
-(7, 'Camila', 'Herrera', '3007777777', '[camila@email.com](mailto:camila@email.com)'),
-(8, 'Julian', 'Martinez', '3008888888', '[julian@email.com](mailto:julian@email.com)'),
-(9, 'Paula', 'Rojas', '3009999999', '[paula@email.com](mailto:paula@email.com)'),
-(10, 'Nicolas', 'Dias', '3011111111', '[nicolas@email.com](mailto:nicolas@email.com)'),
-(11, 'Valentina', 'Mora', '3012222222', '[valentina@email.com](mailto:valentina@email.com)'),
-(12, 'Samuel', 'Vargas', '3013333333', '[samuel@email.com](mailto:samuel@email.com)'),
-(13, 'Fernando', 'Leon', '3014444444', '[fernando@email.com](mailto:fernando@email.com)'),
-(14, 'Juan', 'Silva', '3015555555', '[juan@email.com](mailto:juan@email.com)'),
-(15, 'Isabella', 'Medina', '3016666666', '[isabella@email.com](mailto:isabella@email.com)');
+(1, 'Carlos', 'Ramirez', '3001111111', 'carlos@email.com'),
+(2, 'Laura', 'Gomez', NULL, 'laura@email.com'),
+(3, 'Miguel', 'Torres', '3003333333', 'miguel@email.com'),
+(4, 'Andrea', 'Ruiz', NULL, 'andrea@email.com'),
+(5, 'Sofia', 'Perez', '3005555555', 'sofia@email.com'),
+(6, 'Daniel', 'Castro', NULL, 'daniel@email.com'),
+(7, 'Camila', 'Herrera', '3007777777', 'camila@email.com'),
+(8, 'Julian', 'Martinez', '3008888888', 'julian@email.com'),
+(9, 'Paula', 'Rojas', '3009999999', 'paula@email.com'),
+(10, 'Nicolas', 'Dias', '3011111111', 'nicolas@email.com'),
+(11, 'Valentina', 'Mora', '3012222222', 'valentina@email.com'),
+(12, 'Samuel', 'Vargas', '3013333333', 'samuel@email.com'),
+(13, 'Fernando', 'Leon', '3014444444', 'fernando@email.com'),
+(14, 'Juan', 'Silva', '3015555555', 'juan@email.com'),
+(15, 'Isabella', 'Medina', '3016666666', 'isabella@email.com');
 
 INSERT INTO units (unit_id, unit_number, tower, owner_id, status)
 VALUES
