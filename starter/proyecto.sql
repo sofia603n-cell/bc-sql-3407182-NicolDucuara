@@ -137,3 +137,30 @@ SELECT
 FROM units u
 INNER JOIN fees f ON f.unit_id= u.unit_id
 INNER JOIN owners o ON u.owner_id      = o.owner_id;
+
+
+
+ SELECT
+    u.unit_number  AS unit,
+    f.status AS status
+ FROM units u 
+ LEFT JOIN fees f ON f.unit_id = u.unit_id;
+
+
+SELECT
+    u.unit_number AS unit_without_payment
+FROM units u
+LEFT JOIN fees f
+    ON f.unit_id = u.unit_id
+WHERE f.fee_id IS NULL;
+
+
+SELECT
+    u.unit_number AS unidad,
+    COUNT(f.fee_id) AS total_pagos
+FROM units u
+LEFT JOIN fees f
+    ON f.unit_id = u.unit_id
+GROUP BY u.unit_number
+ORDER BY total_pagos DESC;
+
