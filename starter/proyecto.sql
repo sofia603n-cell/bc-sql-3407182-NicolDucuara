@@ -131,14 +131,14 @@ WHERE cost < 250000;
 
 
 
-SELECT * FROM owners
+SELECT owner_id, first_name, last_name, phone, email FROM owners
 ORDER BY owner_id;
 
-SELECT * FROM units
+SELECT unit_id, unit_number, tower, owner_id, status FROM units
 ORDER BY unit_id;
 
-SELECT * FROM fees
+SELECT fee_id, unit_id, amount, payment_date, status FROM fees
 ORDER BY fee_id;
 
-SELECT * FROM maintenance
+SELECT maintenance_id, unit_id, description, maintenance_date, cost FROM maintenance
 ORDER BY maintenance_id;
