@@ -55,8 +55,8 @@ INSERT INTO fees (id, unit_id, amount, due_date, status) VALUES
 (4, 4, 250000, '2026-04-30', 'Paid'),
 (5, 5, 300000, '2026-04-30', 'Pending');
 
-SELECT * FROM units;
+SELECT id, number, floor, area FROM units;
 
 SELECT name FROM owners ORDER BY name;
 
-SELECT * FROM fees WHERE status = 'pendiente';
+SELECT id, unit_id, amount, due_date, status FROM fees WHERE status = 'pendiente';
